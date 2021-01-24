@@ -87,7 +87,6 @@ void load_gauguin() {
     property_override("ro.product.device", "gauguin");
     property_override("ro.product.marketname", "Mi 10T Lite");
     property_override("ro.build.description", "gauguin-user 10 10/QKQ1.200628.002 V12.0.5.0.QJSMIXM release-keys");
-    property_override("ro.build.fingerprint", "Redmi/gauguin/gauguin:10/QKQ1.200628.002/V12.0.5.0.QJSMIXM:user/release-keys");
 }
 
 void load_gauguininpro() {
@@ -96,7 +95,6 @@ void load_gauguininpro() {
     property_override("ro.product.device", "gauguininpro");
     property_override("ro.product.marketname", "Mi 10i");
     property_override("ro.build.description", "gauguininpro-user 10 QKQ1.200628.002 V12.0.4.0.QJSINXM release-keys");
-    property_override("ro.build.fingerprint", "Xiaomi/gauguininpro/gauguininpro:10/QKQ1.200628.002/V12.0.4.0.QJSINXM:user/release-keys");
 }
 
 void load_gauguinpro() {
@@ -105,7 +103,6 @@ void load_gauguinpro() {
     property_override("ro.product.device", "gauguinpro");
     property_override("ro.product.marketname", "Redmi Note 9 Pro");
     property_override("ro.build.description", "gauguinpro-user 10 QKQ1.200628.002 V12.0.4.0.QJSCNXM release-keys");
-    property_override("ro.build.fingerprint", "Redmi/gauguinpro/gauguinpro:10/QKQ1.200628.002/V12.0.4.0.QJSCNXM:user/release-keys");
 }
 
 
@@ -123,4 +120,5 @@ void vendor_load_properties() {
     }
     // Workaround SafetyNet
     workaround_snet_properties();
+    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
